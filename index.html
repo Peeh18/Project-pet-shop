@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script>
         let nomeUsuario = prompt("Gostaria de informar seu nome? Caso não, basta fechar esse aviso.")
+        if (nomeUsuario === null || nomeUsuario.trim() === "") {
+            nomeUsuario = "Visitante";
+    }
     </script>
 
        
@@ -70,6 +73,12 @@
        a saúde e o bem-estar dos seus pets.</i></p>
 
      <br>
+
+     <script>
+        document.write("Vamos ter uma experiência ainda mais completa " + nomeUsuario + "?")
+    </script>
+
+    <br><br>
 
     <h2>Que tal conhecermos mais sobre nossos Pets? Abaixo vamos falar sobre uma raça muito querida!</h2>
     <br> 
